@@ -277,6 +277,7 @@ bool AsyncModem::SIM7000::sendSMS(
 
 bool AsyncModem::SIM7000::enableAutoRefresh(bool enabled) {
     autoRefresh = enabled;
+    return enabled;
 }
 
 AsyncModem::SIM7000::NETWORK_STATUS AsyncModem::SIM7000::getNetworkStatusForInt(uint8_t value) {
